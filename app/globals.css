@@ -31,3 +31,95 @@ body {
 		text-wrap: balance;
 	}
 } */
+
+.card {
+	display: flex;
+	height: 70px;
+	width: 350px;
+	justify-content: flex-end;
+}
+
+.card svg {
+	position: absolute;
+	display: flex;
+	width: 60%;
+	height: 100%;
+	font-size: 24px;
+	font-weight: 700;
+	opacity: 1;
+	transition: opacity 0.25s;
+	z-index: 2;
+	padding: 0.25rem;
+	cursor: pointer;
+	transform: scale(1);
+}
+
+.card .social-link1,
+.card .social-link2,
+.card .social-link3,
+.card .social-link4,
+.card .social-link5 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 15%;
+	color: black;
+	font-size: 10px;
+	text-decoration: none;
+	transition: 0.25s;
+	border-radius: 40px;
+}
+
+.card .social-link1:hover,
+.card .social-link2:hover,
+.card .social-link3:hover,
+.card .social-link4:hover,
+.card .social-link5:hover {
+	animation: bounce_613 0.4s linear;
+}
+
+.card .social-link1:hover {
+	background: linear-gradient(
+		45deg,
+		#f09433 0%,
+		#e6683c 25%,
+		#dc2743 50%,
+		#cc2366 75%,
+		#bc1888 100%
+	);
+}
+
+.card .social-link2:hover {
+	background-color: #242c34;
+}
+
+.card .social-link3:hover {
+	background-color: #5865f2;
+}
+
+.card .social-link4:hover {
+	background-color: #0a66c2;
+}
+
+.card .social-link5:hover {
+	background-color: #ff8000;
+}
+
+@keyframes bounce_613 {
+	40% {
+		transform: scale(1.4);
+	}
+
+	60% {
+		transform: scale(0.8);
+	}
+
+	80% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
