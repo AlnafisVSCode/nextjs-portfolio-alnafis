@@ -1,10 +1,14 @@
+import About from "@/components/about";
 import Header from "@/components/header";
 import Intro from "@/components/intro";
+import SectionDiv from "@/components/section";
 
 export default function Home() {
 	return (
 		<main className="flex flex-col items-center px-4">
 			<Intro />
+			<SectionDiv />
+			<About />
 		</main>
 	);
 }

@@ -19,7 +19,7 @@ export default function Intro() {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ type: "tween", duration: 0.2 }}>
 						<Image
-							src="/Upscaled Leather Me.jpg"
+							src="/UpscaledLeatherMe.webp"
 							width={192}
 							height={192}
 							quality={95}
@@ -45,7 +45,7 @@ export default function Intro() {
 			</div>
 
 			{/* intro description */}
-			<motion.p
+			<motion.h1
 				className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}>
@@ -54,7 +54,7 @@ export default function Intro() {
 				<span className="font-bold">recent</span> graduate. I enjoy building{" "}
 				<span className="italic">sites & apps</span>. My focus is{" "}
 				<span className="underline">React (Next.js)</span>.
-			</motion.p>
+			</motion.h1>
 
 			{/* Social Links */}
 			<motion.div
