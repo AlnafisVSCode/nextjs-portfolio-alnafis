@@ -1,6 +1,7 @@
 import About from "@/components/about";
 import Header from "@/components/header";
 import Intro from "@/components/intro";
+import Projects from "@/components/projects";
 import SectionDiv from "@/components/section";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
 			<Intro />
 			<SectionDiv />
 			<About />
+			<Projects />
 		</main>
 	);
 }
