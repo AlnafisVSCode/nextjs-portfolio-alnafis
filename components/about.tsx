@@ -1,15 +1,16 @@
 "use client";
-import React, { use } from "react";
+import React, { use, useRef } from "react";
 import Sectionheadings from "./section-headings";
 import { motion } from "framer-motion";
 
 export default function About() {
 	return (
 		<motion.section
-			className="md-28 max-w-[45rem] text-center leading-8 sm: mb-40"
+			className="md-28 max-w-[45rem] text-center leading-8 sm: mb-40 scroll-mt-32"
 			initial={{ opacity: 0, y: 100 }}
 			animate={{ opacity: 1, y: 0 }}
-			transition={{ delay: 0.18 }}>
+			transition={{ delay: 0.18 }}
+			id="about">
 			<Sectionheadings> About me</Sectionheadings>
 			<p className="mb-3">
 				After graduating with a degree in{" "}
