@@ -9,6 +9,7 @@ export default function About() {
 	const { ref, inView } = useInView({ threshold: 0.75 });
 	const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
+	// Disabling the active session for 1 second after clicking a link
 	useEffect(() => {
 		if (inView && Date.now() - timeOfLastClick > 1000) {
 			setActiveSection("About");

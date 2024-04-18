@@ -12,13 +12,13 @@ import { useInView } from "react-intersection-observer";
 
 export default function Intro() {
 	const { ref, inView } = useInView({ threshold: 0.5 });
-	const { setActiveSection } = useActiveSectionContext();
+	const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
 	useEffect(() => {
-		if (inView) {
+		if (inView && Date.now() - timeOfLastClick > 1000) {
 			setActiveSection("Home");
 		}
-	}, [inView, setActiveSection]);
+	}, [inView, setActiveSection, timeOfLastClick]);
 
 	return (
 		<section
