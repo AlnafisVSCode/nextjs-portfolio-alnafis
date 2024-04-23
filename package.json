@@ -16,7 +16,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
-    "react-intersection-observer": "^9.8.2"
+    "react-intersection-observer": "^9.8.2",
+    "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
     "@types/node": "^20",

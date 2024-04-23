@@ -3,7 +3,8 @@ import Header from "@/components/header";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDiv from "@/components/section";
-import Skillsz from "@/components/skillsz";
+import Skills from "@/components/skills";
+import Skillsz from "@/components/skills";
 
 export default function Home() {
 	return (
@@ -12,7 +13,7 @@ export default function Home() {
 			<SectionDiv />
 			<About />
 			<Projects />
-			<Skillsz />
+			<Skills />
 		</main>
 	);
 }
