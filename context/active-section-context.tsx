@@ -2,8 +2,8 @@
 
 import React, { useState, createContext } from "react";
 import { links } from "@/lib/data";
+import { SectionName } from "@/lib/type";
 
-type SectionName = (typeof links)[number]["name"];
 type activeSectionContextProviderProps = { children: React.ReactNode };
 
 type ActiveSectionType = {
