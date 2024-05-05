@@ -35,7 +35,7 @@ export default function Contact() {
 				action={async (formData) => {
 					console.log(formData.get("Running on client side"));
 					console.log(formData.get("senderEmail"));
-					console.log(formData.get("message!"));
+					console.log(formData.get("message!¬!"));
 
 					await sendEmail(formData);
 				}}>
