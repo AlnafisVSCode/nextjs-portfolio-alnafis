@@ -6,6 +6,9 @@ import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
+import { useFormStatus } from "react-dom";
+import Submitbutton from "./submit-button";
+import toast from "react-hot-toast";
 
 export default function Contact() {
 	const { ref } = useSectionInView("Contact");
@@ -31,10 +34,18 @@ export default function Contact() {
 			</p>
 
 			<form
-				className="mt-10 flex flex-col "
+				className="mt-10 flex flex-col dark:text-black"
 				action={async (formData) => {
-					await sendEmail(formData);
+					const { data, error } = await sendEmail(formData);
+
+					if (error) {
+						toast.error(error);
+						return;
+					}
+
+					toast.success("Email sent successfully!");
 				}}
+
 				// console.log(formData.get("Running on client side!!"));
 				// console.log(formData.get("senderEmail!"));
 				// console.log(formData.get("message!¬!"));
@@ -43,22 +54,17 @@ export default function Contact() {
 					type="email"
 					required
 					maxLength={600}
-					className="h-14 px-4 rounded-lg border border-black/10"
+					className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
 					placeholder="Email"
 					name="senderEmail"
 				/>
 				<textarea
-					className="h-52 my-3 rounded-lg border border-black/10 p-4"
+					className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
 					placeholder="Your Message"
 					name="message"
 					required
 					maxLength={4000}></textarea>
-				<button
-					type="submit"
-					className="group flex items-center gap-2 justify-center h-[3rem] w-[8rem] bg-gray-800 text-white rounded-full outline-none transition-all focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:bg-gray-950">
-					Submit{" "}
-					<FaPaperPlane className="text-yellow-300  opacity-80 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
-				</button>
+				<Submitbutton />
 			</form>
 		</motion.section>
 	);

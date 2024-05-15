@@ -1,7 +1,7 @@
 "use server";
 import { error } from "console";
 import { Resend } from "resend";
-import { validateString } from "@/lib/utils";
+import { validateString, getErrorMessage } from "@/lib/utils";
 import Contactform from "@/emails/contact-form";
 import React from "react";
 
@@ -26,9 +26,10 @@ export const sendEmail = async (formData: FormData) => {
 		};
 	}
 
+	let data;
 	try {
-		await resend.emails.send({
-			from: "Homie Portfolio<onboarding@resend.dev>",
+		data = await resend.emails.send({
+			from: "Alfies Portfolio<onboarding@resend.com>",
 			to: "alnafischowdhury@gmail.com",
 			subject: "New message from your portfolio",
 			reply_to: senderEmail as string,
@@ -37,10 +38,10 @@ export const sendEmail = async (formData: FormData) => {
 				senderEmail: senderEmail as string,
 			}),
 		});
-	} catch (err) {
-		console.error(err);
+	} catch (error: unknown) {
 		return {
-			error: "Failed to send email",
+			error: getErrorMessage(error),
 		};
 	}
+	return { data };
 };

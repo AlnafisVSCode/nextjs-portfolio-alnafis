@@ -17,28 +17,30 @@ type ContactFormEmailProps = {
 	senderEmail: string;
 };
 
-export default function Contactform({
+const ContactFormEmail: React.FC<ContactFormEmailProps> = ({
 	message,
 	senderEmail,
-}: ContactFormEmailProps) {
-	return (
-		<Html>
-			<Head />
-			<Preview>New Message from Portfolio</Preview>
-			<Tailwind>
-				<Body className="bg-gray-100 text-black">
-					<Container>
-						<Section className="bg-white border-black my-10 py-4 rounded-md">
-							<Heading className="leading-tight">
-								You received the following message from the contact form
-							</Heading>
-							<Text>{message}</Text>
-							<Hr />
-							<Text>Sender Email: {senderEmail}</Text>
-						</Section>
-					</Container>
-				</Body>
-			</Tailwind>
-		</Html>
-	);
-}
+}) => (
+	<Html>
+		<Head />
+		<Preview>New Message from Portfolio</Preview>
+		<Tailwind>
+			<Body className="bg-gray-100 text-black font-sans">
+				<Container className="max-w-4xl mx-auto">
+					<Section className="bg-white shadow-lg border-gray-300 border p-6 rounded-lg my-10">
+						<Heading className="text-xl font-bold mb-4">
+							You received the following message from the contact form:
+						</Heading>
+						<Text className="mb-2 text-gray-800">{message}</Text>
+						<Hr className="my-4 border-t-2" />
+						<Text className="font-medium text-gray-900">
+							Sender Email: {senderEmail}
+						</Text>
+					</Section>
+				</Container>
+			</Body>
+		</Tailwind>
+	</Html>
+);
+
+export default ContactFormEmail;
