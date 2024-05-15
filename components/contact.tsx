@@ -33,16 +33,16 @@ export default function Contact() {
 			<form
 				className="mt-10 flex flex-col "
 				action={async (formData) => {
-					console.log(formData.get("Running on client side!!"));
-					console.log(formData.get("senderEmail!"));
-					console.log(formData.get("message!¬!"));
-
 					await sendEmail(formData);
-				}}>
+				}}
+				// console.log(formData.get("Running on client side!!"));
+				// console.log(formData.get("senderEmail!"));
+				// console.log(formData.get("message!¬!"));
+			>
 				<input
 					type="email"
 					required
-					maxLength={300}
+					maxLength={600}
 					className="h-14 px-4 rounded-lg border border-black/10"
 					placeholder="Email"
 					name="senderEmail"
@@ -52,7 +52,7 @@ export default function Contact() {
 					placeholder="Your Message"
 					name="message"
 					required
-					maxLength={500}></textarea>
+					maxLength={4000}></textarea>
 				<button
 					type="submit"
 					className="group flex items-center gap-2 justify-center h-[3rem] w-[8rem] bg-gray-800 text-white rounded-full outline-none transition-all focus:scale-[1.15] hover:scale-[1.15] active:scale-105 hover:bg-gray-950">
