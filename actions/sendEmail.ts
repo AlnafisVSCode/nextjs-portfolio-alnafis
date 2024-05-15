@@ -2,6 +2,8 @@
 import { error } from "console";
 import { Resend } from "resend";
 import { validateString } from "@/lib/utils";
+import Contactform from "@/emails/contact-form";
+import React from "react";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -24,11 +26,21 @@ export const sendEmail = async (formData: FormData) => {
 		};
 	}
 
-	resend.emails.send({
-		from: "onboarding@resend.dev",
-		to: "alnafischowdhury@gmail.com",
-		subject: "New message from your portfolio",
-		reply_to: senderEmail as string,
-		text: message as string,
-	});
+	try {
+		await resend.emails.send({
+			from: "Homie Portfolio<onboarding@resend.dev>",
+			to: "alnafischowdhury@gmail.com",
+			subject: "New message from your portfolio",
+			reply_to: senderEmail as string,
+			react: React.createElement(Contactform, {
+				message: message as string,
+				senderEmail: senderEmail as string,
+			}),
+		});
+	} catch (err) {
+		console.error(err);
+		return {
+			error: "Failed to send email",
+		};
+	}
 };
