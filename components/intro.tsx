@@ -27,7 +27,7 @@ export default function Intro() {
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{ type: "tween", duration: 0.2 }}>
 						<Image
-							src="/UpscaledLeatherMe.webp"
+							src="/woodcutterMe.jpg"
 							width={192}
 							height={192}
 							quality={95}
@@ -47,7 +47,7 @@ export default function Intro() {
 							delay: 0.5,
 							duration: 0.6,
 						}}>
-						😁
+						📜
 					</motion.span>
 				</div>
 			</div>
