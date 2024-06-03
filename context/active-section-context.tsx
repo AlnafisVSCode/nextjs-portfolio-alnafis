@@ -13,8 +13,9 @@ type ActiveSectionType = {
 	setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
 
-export const ActiveSectionContext =
-	React.createContext<ActiveSectionType | null>(null);
+export const ActiveSectionContext = createContext<ActiveSectionType | null>(
+	null
+);
 
 export default function ActiveSectionContextProvider({
 	children,

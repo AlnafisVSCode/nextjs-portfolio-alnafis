@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Sectionheading from "./section-headings";
 import {
 	VerticalTimeline,
@@ -14,14 +14,30 @@ import { useTheme } from "@/context/theme-context";
 export default function Experience() {
 	const { ref } = useSectionInView("Experience");
 	const { theme } = useTheme();
+	const [visibleElements, setVisibleElements] = useState<number[]>([]);
+
+	useEffect(() => {
+		const timers = experiencesData.map(
+			(_, index) =>
+				setTimeout(() => {
+					setVisibleElements((prev) => [...prev, index]);
+				}, index * 200) // Delay each element by 200ms
+		);
+
+		return () => timers.forEach((timer) => clearTimeout(timer));
+	}, []);
 
 	return (
-		<section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+		<section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 ">
 			<Sectionheading>My Experience </Sectionheading>
 			<VerticalTimeline lineColor="">
 				{experiencesData.map((experience, index) => (
 					<React.Fragment key={index}>
 						<VerticalTimelineElement
+							visible={true}
+							className={`fade-in ${
+								visibleElements.includes(index) ? "visible" : ""
+							}`}
 							contentStyle={{
 								background:
 									theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
@@ -30,7 +46,6 @@ export default function Experience() {
 								textAlign: "left",
 								padding: "1.3rem 2rem",
 							}}
-							visible={true}
 							contentArrowStyle={{
 								borderRight:
 									theme === "light"
