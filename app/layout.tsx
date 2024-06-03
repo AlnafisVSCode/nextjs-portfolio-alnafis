@@ -11,7 +11,7 @@ import ThemeContextProvider from "@/context/theme-context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Alnafis | Personal Portfolio",
+	title: "Alnafis | Professional Portfolio",
 	description:
 		"Alnafis Chowdhury is a software engineer based in London, United Kingdom.",
 };

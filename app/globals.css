@@ -141,3 +141,18 @@ body {
 .fade-in.visible {
 	opacity: 1;
 }
+
+/* Add this to your CSS file */
+.fade-in-constant {
+	opacity: 0;
+	animation: fadeInConstant 1s forwards;
+}
+
+@keyframes fadeInConstant {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
