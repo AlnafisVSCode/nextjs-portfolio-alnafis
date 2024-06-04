@@ -12,6 +12,10 @@ export const links = [
 		hash: "#home",
 	},
 	{
+		name: "Experience",
+		hash: "#experience",
+	},
+	{
 		name: "About",
 		hash: "#about",
 	},
@@ -24,10 +28,6 @@ export const links = [
 		hash: "#skills",
 	},
 	{
-		name: "Experience",
-		hash: "#experience",
-	},
-	{
 		name: "Contact",
 		hash: "#contact",
 	},
@@ -35,28 +35,40 @@ export const links = [
 
 export const experiencesData = [
 	{
-		title: "Graduated bootcamp",
-		location: "Miami, FL",
-		description:
-			"I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-		icon: React.createElement(LuGraduationCap),
-		date: "2019",
-	},
-	{
-		title: "Front-End Developer",
-		location: "Orlando, FL",
-		description:
-			"I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+		title: "Research Analyst",
+		location: "LSBU - London, UK",
+		description: `
+		Developing algorithmic models for data extraction to facilitate analysis and paper publication. Currently leading research on the top 100 UK organizations, analyzing their contributions to climate initiatives. Led initiatives to integrate AI into data extraction.    `,
+		// icon: React.createElement(LuGraduationCap),
 		icon: React.createElement(CgWorkAlt),
-		date: "2019 - 2021",
+
+		date: "2024 - Present",
+	},
+
+	{
+		title: "MSc Big Data Science",
+		location: "Queen Mary, University of London - UK",
+		description:
+			"I hold a Master of Science (MSc) in Big Data Science, during which I delved into the complexities of managing and analyzing vast amounts of data. My studies encompassed a wide range of topics including data mining, machine learning, cloud computing, and advanced analytics. ",
+		icon: React.createElement(LuGraduationCap),
+		date: "2022 - 2024",
 	},
 	{
-		title: "Full-Stack Developer",
-		location: "Houston, TX",
+		title: "IT Support Engineer",
+		location: "Personaa - London, UK",
 		description:
-			"I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+			"I have experience in providing technical support to end-users through various channels and expertise in setting up and maintaining network devices such as routers, switches, and firewalls to ensure network security and efficiency.",
 		icon: React.createElement(FaReact),
-		date: "2021 - present",
+		date: "2021 - 2024",
+	},
+
+	{
+		title: "BEng Software Engineering",
+		location: "University of Westminster - London, UK",
+		description:
+			"I hold a Bachelor of Engineering (BEng) in Sofware Engineering, where I developed a strong foundation in computer programming, software development, and computer systems. My studies included courses in data structures, algorithms, computer networks.",
+		icon: React.createElement(LuGraduationCap),
+		date: "2019 - 2022",
 	},
 ] as const;
 
@@ -96,10 +108,10 @@ export const skillsData = [
 	"Tailwind",
 	"Prisma",
 	"MongoDB",
-	"Redux",
+	"Java",
 	"GraphQL",
 	"Apollo",
-	"Express",
+	"R",
 	"PostgreSQL",
 	"Python",
 	"Django",
