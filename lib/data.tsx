@@ -36,7 +36,7 @@ export const links = [
 export const experiencesData = [
 	{
 		title: "Research Analyst",
-		location: "LSBU - London, UK",
+		location: "London South Bank University",
 		description: `
 		Developing algorithmic models for data extraction to facilitate analysis and paper publication. Currently leading research on the top 100 UK organizations, analyzing their contributions to climate initiatives. Led initiatives to integrate AI into data extraction.    `,
 		// icon: React.createElement(LuGraduationCap),
@@ -47,11 +47,11 @@ export const experiencesData = [
 
 	{
 		title: "MSc Big Data Science",
-		location: "Queen Mary, University of London - UK",
+		location: "Queen Mary, University of London",
 		description:
 			"I hold a Master of Science (MSc) in Big Data Science, during which I delved into the complexities of managing and analyzing vast amounts of data. My studies encompassed a wide range of topics including data mining, machine learning, cloud computing, and advanced analytics. ",
 		icon: React.createElement(LuGraduationCap),
-		date: "2022 - 2024",
+		date: "2022 - 2023",
 	},
 	{
 		title: "IT Support Engineer",
@@ -74,24 +74,24 @@ export const experiencesData = [
 
 export const projectsData = [
 	{
-		title: "CorpComment",
+		title: "Biography App",
 		description:
 			"I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
 		tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
 		imageUrl: corpcommentImg,
 	},
 	{
-		title: "rmtDev",
+		title: "Retinopathy Diabetic Detection",
 		description:
-			"Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-		tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+			"I developed a deep-learning algorithm that can detect diabetic retinopathy, improving diagnostics. The model underwent refinement through hyperparameter tuning.",
+		tags: ["Deep learning", "Kaggle", "Python", "Transfer learning"],
 		imageUrl: rmtdevImg,
 	},
 	{
-		title: "Word Analytics",
+		title: "Audio Classification Algorithm",
 		description:
 			"A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-		tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+		tags: ["TensorFlow", "SVM", "SQL", "KNN", "GMM", "Python", "Flask"],
 		imageUrl: wordanalyticsImg,
 	},
 ] as const;
