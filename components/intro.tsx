@@ -57,11 +57,25 @@ export default function Intro() {
 				className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
 				initial={{ opacity: 0, y: 100 }}
 				animate={{ opacity: 1, y: 0 }}>
-				<span className="font-bold">Hello, I'm Alnafis.</span> I'm a{" "}
-				<span className="font-bold">software developer</span> as a{" "}
-				<span className="font-bold">recent</span> graduate. I enjoy building{" "}
-				<span className="italic">sites & apps</span>. My focus is{" "}
-				<span className="underline">React (Next.js)</span>.
+				<div className="intro-text">
+					<h1 className="text-3xl font-bold">Greetings, I'm Alnafis.</h1>
+					<p className="text-xl">
+						As a <strong className="text-xl">Data Scientist</strong> with a
+						robust
+						<strong className="text-xl"> Software Engineering</strong>{" "}
+						background, I specialize in transforming complex data into
+						insightful narratives.
+					</p>
+					<p className="text-xl">
+						I also craft web applications using{" "}
+						<a className="text-blue-500 underline">React (Next.js)</a>.
+					</p>
+					<p className="text-xl italic">
+						<a href="#work" className="text-blue-500 underline">
+							Explore my work!
+						</a>
+					</p>
+				</div>
 			</motion.h1>
 
 			{/* Social Links */}
@@ -85,7 +99,7 @@ export default function Intro() {
 
 				<a
 					className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-Black/20 dark:bg-white/10"
-					href="/AlnafisChowdhury_Resume.pdf"
+					href="/Resume_Alnafis_Chowdhury.pdf"
 					download>
 					Download CV{" "}
 					<HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -93,14 +107,14 @@ export default function Intro() {
 
 				<a
 					className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-					href="https://linkedin.com"
+					href="https://linkedin.com/in/alnafis"
 					target="_blank">
 					<BsLinkedin />
 				</a>
 
 				<a
 					className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-					href="https://github.com"
+					href="https://github.com/AlnafisVSCode"
 					target="_blank">
 					<FaGithubSquare />
 				</a>
