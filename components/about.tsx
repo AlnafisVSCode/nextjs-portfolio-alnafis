@@ -18,31 +18,28 @@ export default function About() {
 			transition={{ delay: 0.18 }}
 			id="about">
 			<Sectionheadings> About me</Sectionheadings>
-			<p className="mb-3">
-				After graduating with a degree in{" "}
-				<span className="font-medium">Software Engineering</span>, I decided to
-				pursue my passion for Data. I enrolled in my masters in Big Data Science{" "}
-				<span className="font-medium">full-stack web development.</span>.{" "}
-				<span className="italic">My favorite part of programming</span> is the
-				problem-solving aspect. I <span className="underline">love</span> the
-				feeling of finally figuring out a solution to a problem. My core stack
-				is{" "}
-				<span className="font-medium">
-					React, Next.js, Node.js, and MongoDB
-				</span>
-				. I am also familiar with TypeScript and Prisma. I am always looking to
-				learn new technologies. I am currently looking for a{" "}
-				<span className="font-medium">full-time position</span> as a software
-				developer.
-			</p>
-			<p>
-				<span className="italic">When I'm not coding</span>, I enjoy playing
-				video games, watching movies, and playing with my dog. I also enjoy{" "}
-				<span className="font-medium">learning new things</span>. I am currently
-				learning about{" "}
-				<span className="font-medium">history and philosophy</span>. I'm also
-				learning how to play the guitar.
-			</p>
+			<div className="about-me">
+				<p className="text-lg mb-3">
+					After earning a degree in{" "}
+					<strong className="text-lg">Software Engineering</strong>, I decided
+					to follow my passion for Data. I pursued a master's degree in{" "}
+					<strong className="text-lg">Big Data Science</strong> and full-stack
+					web development. The aspect of programming I enjoy the most is
+					problem-solving. I{" "}
+					<span className="text-blue-500 underline">love</span> the feeling of
+					finally figuring out a solution to a problem. My core stack includes{" "}
+					<strong className="text-lg">React and Next.js</strong>. I'm also
+					proficient in TypeScript. I'm always eager to learn new technologies
+					and am currently seeking a full-time position as a software developer.
+				</p>
+				<p className="text-lg">
+					When I'm not coding, I enjoy playing video games, watching movies, and
+					spending time with my dog. I also take pleasure in learning new
+					things. Currently, I'm delving into{" "}
+					<strong className="text-lg">history and philosophy</strong> and
+					learning how to play the guitar.
+				</p>
+			</div>
 		</motion.section>
 	);
 }
