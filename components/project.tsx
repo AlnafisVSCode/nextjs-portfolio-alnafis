@@ -1,7 +1,12 @@
+"use client";
+
 import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
+import { GoLinkExternal } from "react-icons/go";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -10,6 +15,7 @@ export default function Project({
 	description,
 	tags,
 	imageUrl,
+	githubUrl,
 }: ProjectProps) {
 	const ref = useRef<HTMLDivElement>(null);
 	const { scrollYProgress } = useScroll({
@@ -27,8 +33,12 @@ export default function Project({
 			className="group mb-3 sm:mb-8 last:mb-0">
 			<section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:bg-white/20 dark:hover:bg-white/25">
 				<div className="pt-4 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-					<h3 className="text-2xl font-bold">{title}</h3>
-					<p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70 text-sm">
+					<a href={githubUrl} target="_blank" rel="noopener noreferrer">
+						<h3 className="text-2xl font-bold inline-block mr-2">{title}</h3>
+						<FiExternalLink className="inline-block text-sm" />{" "}
+						{/* Add the icon here */}
+					</a>
+					<p className="mt-4 leading-relaxed text-gray-700 dark:text-white/70 text-sm">
 						{description}
 					</p>
 					<ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">

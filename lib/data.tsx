@@ -78,25 +78,28 @@ export const experiencesData = [
 
 export const projectsData = [
 	{
-		title: "Diabetic Retinopathy Detection",
+		title: "DR Detection",
 		description:
-			"Engineered a deep-learning algorithm capable of detecting diabetic retinopathy, thereby enhancing diagnostic accuracy. The model was meticulously refined through extensive hyperparameter tuning.",
+			"Engineered a Diabetic Retinopathy deep-learning algorithm capable of detecting DR, thereby enhancing diagnostic accuracy. The model was meticulously refined through extensive hyperparameter tuning.",
 		tags: ["Deep learning", "Kaggle", "Python", "Transfer learning"],
 		imageUrl: testEye,
+		githubUrl: "https://github.com/AlnafisVSCode/next-Biography-Alnafis", // Add your GitHub URL here
 	},
 	{
 		title: "Biography App",
 		description:
 			"A portfolio showcasing my expertise in data science, software engineering, and web development with React and Next.js, along with my personal interests and continuous learning journey.",
-		tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+		tags: ["React", "Next.js", "Vercel", "Tailwind", "TypeScript"],
 		imageUrl: bioApp,
+		githubUrl: "https://github.com/AlnafisVSCode/next-Biography-Alnafis", // Add your GitHub URL here
 	},
 	{
-		title: "Audio Classification Algorithm",
+		title: "Audio Classification",
 		description:
 			"The Audio Classification Algorithm discerns indoor and outdoor sounds, enhancing context understanding for applications like smart devices and surveillance systems",
 		tags: ["TensorFlow", "SVM", "SQL", "KNN", "GMM", "Python", "Flask"],
 		imageUrl: AudioOutput,
+		githubUrl: "https://github.com/yourusername/project3", // Add your GitHub URL here
 	},
 ] as const;
 
