@@ -5,6 +5,10 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import bioApp from "@/public/bioapp.png";
+import testEyes from "@/public/testeyes.png";
+import testEye from "@/public/testeye.jpg";
+import AudioOutput from "@/public/audiooutput.png";
 
 export const links = [
 	{
@@ -74,25 +78,25 @@ export const experiencesData = [
 
 export const projectsData = [
 	{
-		title: "Biography App",
+		title: "Diabetic Retinopathy Detection",
 		description:
-			"I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-		tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-		imageUrl: corpcommentImg,
+			"Engineered a deep-learning algorithm capable of detecting diabetic retinopathy, thereby enhancing diagnostic accuracy. The model was meticulously refined through extensive hyperparameter tuning.",
+		tags: ["Deep learning", "Kaggle", "Python", "Transfer learning"],
+		imageUrl: testEye,
 	},
 	{
-		title: "Retinopathy Diabetic Detection",
+		title: "Biography App",
 		description:
-			"I developed a deep-learning algorithm that can detect diabetic retinopathy, improving diagnostics. The model underwent refinement through hyperparameter tuning.",
-		tags: ["Deep learning", "Kaggle", "Python", "Transfer learning"],
-		imageUrl: rmtdevImg,
+			"A portfolio showcasing my expertise in data science, software engineering, and web development with React and Next.js, along with my personal interests and continuous learning journey.",
+		tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+		imageUrl: bioApp,
 	},
 	{
 		title: "Audio Classification Algorithm",
 		description:
-			"A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+			"The Audio Classification Algorithm discerns indoor and outdoor sounds, enhancing context understanding for applications like smart devices and surveillance systems",
 		tags: ["TensorFlow", "SVM", "SQL", "KNN", "GMM", "Python", "Flask"],
-		imageUrl: wordanalyticsImg,
+		imageUrl: AudioOutput,
 	},
 ] as const;
 
@@ -103,17 +107,12 @@ export const skillsData = [
 	"TypeScript",
 	"React",
 	"Next.js",
-	"Node.js",
 	"Git",
 	"Tailwind",
-	"Prisma",
 	"MongoDB",
 	"Java",
-	"GraphQL",
-	"Apollo",
 	"R",
 	"PostgreSQL",
 	"Python",
-	"Django",
 	"Framer Motion",
 ] as const;
