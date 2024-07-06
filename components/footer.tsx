@@ -10,7 +10,7 @@ export default function Footer() {
 				<span className="font-semibold">About This Website:</span> This website
 				is built using Next.js, Tailwind CSS, and TypeScript, featuring the App
 				Router and Server Actions. It also integrates Framer Motion, React Email
-				& Resend, and is hosted on Vercel.
+				& Resend, and is hosted on Vercel
 			</p>
 		</footer>
 	);
