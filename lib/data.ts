@@ -2,10 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import testEye from "@/public/testEye.jpg";
 import bioApp from "@/public/bioapp.png";
-import testEye from "@/public/testeye.jpg";
 import AudioOutput from "@/public/AudioOutput.png";
-
 export const links = [
 	{
 		name: "Home",
