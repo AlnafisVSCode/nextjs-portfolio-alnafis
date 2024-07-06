@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import bioApp from "@/public/bioapp.png";
 import testEye from "@/public/testeye.jpg";
-import AudioOutput from "@/public/audiooutput.png";
+import AudioOutput from "@/public/AudioOutput.png";
 
 export const links = [
 	{
