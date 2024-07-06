@@ -78,7 +78,7 @@ export const projectsData = [
 		description:
 			"Engineered a Diabetic Retinopathy deep-learning algorithm capable of detecting DR, thereby enhancing diagnostic accuracy. The model was meticulously refined through extensive hyperparameter tuning.",
 		tags: ["Deep learning", "Kaggle", "Python", "Transfer learning"],
-		imageUrl: rmtdevImg,
+		imageUrl: corpcommentImg,
 		githubUrl: "https://github.com/AlnafisVSCode/next-Biography-Alnafis", // Add your GitHub URL here
 	},
 	{
@@ -86,7 +86,7 @@ export const projectsData = [
 		description:
 			"A portfolio showcasing my expertise in data science, software engineering, and web development with React and Next.js, along with my personal interests and continuous learning journey.",
 		tags: ["React", "Next.js", "Vercel", "Tailwind", "TypeScript"],
-		imageUrl: wordanalyticsImg,
+		imageUrl: rmtdevImg,
 		githubUrl: "https://github.com/AlnafisVSCode/next-Biography-Alnafis", // Add your GitHub URL here
 	},
 	{
@@ -94,7 +94,7 @@ export const projectsData = [
 		description:
 			"The Audio Classification Algorithm discerns indoor and outdoor sounds, enhancing context understanding for applications like smart devices and surveillance systems",
 		tags: ["TensorFlow", "SVM", "SQL", "KNN", "GMM", "Python", "Flask"],
-		imageUrl: corpcommentImg,
+		imageUrl: wordanalyticsImg,
 		githubUrl: "https://github.com/yourusername/project3", // Add your GitHub URL here
 	},
 ] as const;
