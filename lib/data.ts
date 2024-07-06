@@ -79,7 +79,8 @@ export const projectsData = [
 			"Engineered a Diabetic Retinopathy deep-learning algorithm capable of detecting DR, thereby enhancing diagnostic accuracy. The model was meticulously refined through extensive hyperparameter tuning.",
 		tags: ["Deep learning", "Kaggle", "Python", "Transfer learning"],
 		imageUrl: corpcommentImg,
-		githubUrl: "https://github.com/AlnafisVSCode/next-Biography-Alnafis", // Add your GitHub URL here
+		githubUrl:
+			"https://github.com/AlnafisVSCode/Retinopathy-Detection-Algorithm.", // Add your GitHub URL here
 	},
 	{
 		title: "Biography App",
@@ -95,7 +96,7 @@ export const projectsData = [
 			"The Audio Classification Algorithm discerns indoor and outdoor sounds, enhancing context understanding for applications like smart devices and surveillance systems",
 		tags: ["TensorFlow", "SVM", "SQL", "KNN", "GMM", "Python", "Flask"],
 		imageUrl: wordanalyticsImg,
-		githubUrl: "https://github.com/yourusername/project3", // Add your GitHub URL here
+		githubUrl: "https://github.com/AlnafisVSCode", // Add your GitHub URL here
 	},
 ] as const;
 
